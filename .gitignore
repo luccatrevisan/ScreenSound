@@ -1,0 +1,55 @@
+# Visual Studio temporary files, build results, and other generated files
+
+# User-specific files
+*.suo
+*.user
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+.vs/
+# If using .NET Core and the build output is in a different folder (e.g., publish)
+publish/
+
+# Package files
+*.nupkg
+
+# Resharper generated files
+_ReSharper.*/
+*.resharper
+*.dotSettings
+
+# Other Visual Studio files
+*.sdf
+*.vssscc
+*.vspscc
+*.log
+*.trx
+*.pdb
+*.dbmdl
+
+# NuGet packages
+packages/
+*.nuget.log
+
+# Rider files (if you use JetBrains Rider)
+.idea/
+
+# Test results
+TestResults/
+
+# Local settings
+Local.settings.json
+
+# Source control
+*.vspscc
+*/[Pp]roject_Dir*/.vs/
+
+# Misc
+*.bak
+*.tmp
+*.log
