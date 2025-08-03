@@ -4,6 +4,7 @@
 
 //Screen Sound
 using System.Xml;
+using Musica;
 
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
@@ -31,6 +32,7 @@ void ExibirMenu()
     Console.WriteLine("Digite 2: Para Mostrar Todas As Bandas");
     Console.WriteLine("Digite 3: Para Avaliar Uma Banda");
     Console.WriteLine("Digite 4: Para Conferir A Média de Avaliação De Uma Banda");
+    Console.WriteLine("Digite 20: Para Acessar a Parte de Testes");
     Console.WriteLine("Digite 5: Para Sair");
 
     Console.Write("\nDigite a opção desejada: ");
@@ -50,6 +52,9 @@ void ExibirMenu()
             break;
         case 4:
             CalcularMediaDeBanda();
+            break;
+        case 20:
+            AprendendoClasses();
             break;
         case 5: 
             Console.WriteLine("Opção 5 selecionada.");
@@ -167,4 +172,22 @@ void CalcularMediaDeBanda()
     Console.ReadKey();
     Console.Clear();
     ExibirMenu();
+}
+
+void AprendendoClasses()
+{
+    Musica musica1 = new Musica();
+    musica1.nome = "Bohemian Rhapsody";
+    musica1.artista = "Queen";
+    musica1.duracao = 354;
+    musica1.disponivel = true;
+
+    Musica musica2 = new Musica();
+    musica2.nome = "Imagine";
+    musica2.artista = "John Lennon";
+    musica2.duracao = 183;
+    musica2.disponivel = false;
+
+    musica1.ExibirFichaTecnica();
+    musica2.ExibirFichaTecnica();
 }
