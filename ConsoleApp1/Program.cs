@@ -2,7 +2,7 @@
 //docs DOTNET: https://learn.microsoft.com/pt-br/dotnet/api/
 //docs VISUAL STUDIO: https://learn.microsoft.com/pt-br/visualstudio/?view=vs-2022
 
-using ScreenSound.Modelos;
+using ConsoleApp1.Modelos;
 
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
@@ -228,6 +228,11 @@ void AprendendoClasses()
     musica1.ExibirFichaTecnica();
     musica2.ExibirFichaTecnica();
     queen.ExibirDiscografia();
+
+    Console.Write("Pressione qualquer tecla para voltar ao Menu");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirMenu();
 }
 
 void RegistrandoPodcast()
@@ -267,4 +272,9 @@ void RegistrandoPodcast()
     podcast.AdicionarEpisodio(ep2);
 
     podcast.ExibirDetalhes();
+
+    Console.Write("Pressione qualquer tecla para voltar ao Menu");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirMenu();
 }

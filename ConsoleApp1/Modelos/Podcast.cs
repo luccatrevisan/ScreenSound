@@ -1,4 +1,4 @@
-﻿namespace ScreenSound.Modelos;
+﻿namespace ConsoleApp1.Modelos;
 
 class Podcast
 {
