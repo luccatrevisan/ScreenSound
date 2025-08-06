@@ -1,4 +1,6 @@
-﻿class Podcast
+﻿namespace ScreenSound.Modelos;
+
+class Podcast
 {
     public Podcast(string host, string nome)
     {

@@ -1,4 +1,6 @@
-﻿class Musica
+﻿namespace ScreenSound.Modelos;
+
+class Musica
 {
     public Musica(Banda artista, string nome) //defino uma regra assim que uma Musica for criada, exigindo nome do artista ou banda
     {
